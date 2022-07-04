@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="calculator">
+        <h3>Basic Calculator</h3>
+        <div class="screen">
+            <input type="text" class="one">
+            <input type="text" class="two">
+        </div>
+        <div class="buttons">
+            <div>
+                <button onclick="clearCurrent()">CE</button>
+                <button onclick="clearAll()">C</button>
+                <button onclick="del()">DEL</button>
+                <button onclick="divide()">÷</button>
+            </div>
+            <div>
+                <button onclick="input(7)">7</button>
+                <button onclick="input(8)">8</button>
+                <button onclick="input(9)">9</button>
+                <button onclick="multiply()">x</button>
+            </div>
+            <div>
+                <button onclick="input(4)">4</button>
+                <button onclick="input(5)">5</button>
+                <button onclick="input(6)">6</button>
+                <button onclick="subtract()">-</button>
+            </div>
+            <div>
+                <button onclick="input(1)">1</button>
+                <button onclick="input(2)">2</button>
+                <button onclick="input(3)">3</button>
+                <button onclick="add()">+</button>
+            </div>
+            <div>
+                <button onclick="input('.')">.</button>
+                <button onclick="input(0)">0</button>
+                <button onclick="calculate()" class="wide-button">=</button>
+            </div>
+        </div>
+        
+
+    </div>
+</body>
+</html>
